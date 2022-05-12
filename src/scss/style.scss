@@ -1,7 +1,8 @@
-@import "mixins";
+//@import "mixins";
 @import url("https://fonts.googleapis.com/css?family=Heebo:regular,500,700,900&display=swap");
 @import "fonts";
 @import "icons";
+@import "header.scss";
 $font-family: "Heebo";
 
 $minWidth: 320px;
@@ -11,6 +12,42 @@ $md1: $maxWidthContainer + 12;
 $md2: 991.98;
 $md3: 767.98;
 $md4: 479.98;
+
+@import "null.css";
+body {
+    color: #000;
+    font-family: $font-family;
+    font-size: 14px;
+    &._lock {
+        overflow: hidden;
+    }
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    &._loaded {
+
+    }
+}
+
+._container {
+    max-width: $maxWidthContainer + px;
+    margin: 0 auto;
+    @media (max-width: $md1+px) {
+        max-width: 970px;
+    }
+    @media (max-width: $md2+px) {
+        max-width: 750px;
+    }
+    @media (max-width: $md3+px) {
+        max-width: none;
+        padding: 0 10px;
+    }
+}
 
 
 
