@@ -1,24 +1,27 @@
+$minWidth: 320px;
+$maxWidth: 1152;
+$maxWidthContainer: 856;
+$md1: $maxWidthContainer + 12;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+
 //@import "mixins";
 @import url("https://fonts.googleapis.com/css?family=Heebo:regular,500,700,900&display=swap");
 @import "fonts";
 @import "icons";
 @import "header.scss";
 @import "forms.scss";
+@import "ui.scss";
+@import "home.scss";
+@import "works.scss";
 $font-family: "Heebo";
-
-$minWidth: 320px;
-$maxWidth: 2560;
-$maxWidthContainer: 1170;
-$md1: $maxWidthContainer + 12;
-$md2: 991.98;
-$md3: 767.98;
-$md4: 479.98;
 
 @import "null.scss";
 body {
-    color: #000;
+    color: #21243d;
     font-family: $font-family;
-    font-size: 14px;
+    //font-size: 14px;
     &._lock {
         overflow: hidden;
     }
@@ -47,7 +50,13 @@ body {
     }
 }
 
-
+.page {
+    padding: 90px 0px 0px 0px;
+    flex: 1 1 auto;
+    @media (max-width: $md3+px) {
+        padding: 30px 0px 0px 0px;
+    }
+}
 
 
 

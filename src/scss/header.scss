@@ -2,7 +2,8 @@ $md3: 767.98;
 $md2: 991.98;
 
 .header {
-
+    position: relative;
+    z-index: 100;
     &__content {
         max-width: 1052px;
         padding: 0px 6px;
@@ -36,7 +37,7 @@ $md2: 991.98;
             left: 0;
             overflow: auto;
             padding: 70px 10px 30px 10px;
-            background-color: rgba(255, 255, 255, 0.8);
+            background-color: rgba(255, 255, 255, 0.95);
             &._active {
                 transform: translate(0px, 0%);
             }
